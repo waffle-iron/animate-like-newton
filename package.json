@@ -4,9 +4,10 @@
   "description": "A physics-based approach to composing animation in web interfaces.",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src/ -d lib/",
+    "build": "babel src/ -d lib/ --ignore src/index.tests.js",
     "prepublish": "npm run build",
-    "flow": "flow"
+    "flow": "flow",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
